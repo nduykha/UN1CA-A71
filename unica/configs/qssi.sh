@@ -15,7 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-# UN1CA configuration file for Qualcomm devices (qssi)
+# UN1CA configuration file for Snapdragon devices (qssi)
 
 # Galaxy S23 (One UI 7.0)
 SOURCE_FIRMWARE="SM-S911B/EUX/352404911234563"

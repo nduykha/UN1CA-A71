@@ -15,7 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-# SEC Floating Feature configuration file for Galaxy S22+ (Qualcomm) (g0q)
+# SEC Floating Feature configuration file for Galaxy S22+ (Snapdragon) (g0q)
 
 # Disable unsupported features
 SEC_FLOATING_FEATURE_AUDIO_CONFIG_MIC_POSITION=

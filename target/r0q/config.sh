@@ -15,8 +15,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-# Device configuration file for Galaxy S22 (Qualcomm) (r0q)
-TARGET_NAME="Galaxy S22 (Qualcomm)"
+# Device configuration file for Galaxy S22 (Snapdragon) (r0q)
+TARGET_NAME="Galaxy S22 (Snapdragon)"
 TARGET_CODENAME="r0q"
 TARGET_FIRMWARE="SM-S901E/INS/350999641234561"
 TARGET_EXTRA_FIRMWARES=()

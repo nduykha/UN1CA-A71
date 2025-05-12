@@ -15,8 +15,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-# Device configuration file for Galaxy S20 FE (Qualcomm) (r8q)
-TARGET_NAME="Galaxy S20 FE (Qualcomm)"
+# Device configuration file for Galaxy S20 FE (Snapdragon) (r8q)
+TARGET_NAME="Galaxy S20 FE (Snapdragon)"
 TARGET_CODENAME="r8q"
 TARGET_FIRMWARE="SM-G780G/BTU/357107761234568"
 TARGET_EXTRA_FIRMWARES=()
