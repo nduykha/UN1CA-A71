@@ -72,7 +72,7 @@ BUILD()
     cp -a "$OUTPUT_PATH/original/META-INF" "$OUTPUT_PATH/build/apk/META-INF"
 
     # Build APK with --shorten-resource-paths (https://developer.android.com/tools/aapt2#optimize_options)
-    EVAL "apktool b -j \"$(nproc)\" -p \"$FRAMEWORK_DIR\" -t \"$FRAMEWORK_TAG\" -srp \"$OUTPUT_PATH\"" || exit 1
+    EVAL "apktool b -j \"$(nproc)\" -p \"$FRAMEWORK_DIR\" -srp \"$OUTPUT_PATH\"" || exit 1
 
     find "$OUTPUT_PATH" -maxdepth 1 -type f -name "*.dex" -delete
 
