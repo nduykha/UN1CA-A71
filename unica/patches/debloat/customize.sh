@@ -1,21 +1,21 @@
 # Dexpreopt
-for f in $(find "$WORK_DIR/product" -type d -name "oat"); do
+while IFS= read -r f; do
     DELETE_FROM_WORK_DIR "product" "${f//$WORK_DIR\/product\//}"
-done
-for f in $(find "$WORK_DIR/system" -type d -name "oat"); do
+done < <(find "$WORK_DIR/product" -type d -name "oat")
+while IFS= read -r f; do
     DELETE_FROM_WORK_DIR "system" "${f//$WORK_DIR\/system\//}"
-done
+done < <(find "$WORK_DIR/system" -type d -name "oat")
 DELETE_FROM_WORK_DIR "system" "system/etc/boot-image.bprof"
 DELETE_FROM_WORK_DIR "system" "system/etc/boot-image.prof"
 DELETE_FROM_WORK_DIR "system" "system/framework/arm"
 DELETE_FROM_WORK_DIR "system" "system/framework/arm64"
-for f in $(find "$WORK_DIR/system/system/framework" -type f -name "*.vdex"); do
+while IFS= read -r f; do
     DELETE_FROM_WORK_DIR "system" "${f//$WORK_DIR\/system\//}"
-done
+done < <(find "$WORK_DIR/system/system/framework" -type f -name "*.vdex")
 if $TARGET_HAS_SYSTEM_EXT; then
-    for f in $(find "$WORK_DIR/system_ext" -type d -name "oat"); do
-        DELETE_FROM_WORK_DIR "system_ext" "${f//$WORK_DIR\/system_ext\//}"
-    done
+   while IFS= read -r f; do
+       DELETE_FROM_WORK_DIR "system_ext" "${f//$WORK_DIR\/system_ext\//}"
+   done < <(find "$WORK_DIR/system_ext" -type d -name "oat")
 fi
 
 # ROM & device-specific debloat list
